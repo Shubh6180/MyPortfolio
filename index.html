@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shubh Srivastava — Curious Mind. Building What's Next.</title>
+    <meta name="description" content="Personal portfolio of Shubh Srivastava — BTech student at Newton School of Technology, exploring software engineering, AI, web development, and digital craft." />
+    
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Shubh Srivastava — Curious Mind. Building What's Next." />
+    <meta property="og:description" content="BTech student at Newton School of Technology, Pune. Curious builder exploring AI, software engineering, and interactive products." />
+    <meta id="theme-color-meta" name="theme-color" content="#070600" />
+
+    <!-- Anti-flicker Early Theme Resolution Script -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('theme_preference');
+          var theme = (saved === 'light' || saved === 'dark') ? saved : 'dark';
+          document.documentElement.setAttribute('data-theme', theme);
+          var meta = document.getElementById('theme-color-meta');
+          if (meta) {
+            meta.setAttribute('content', theme === 'light' ? '#F3EBDD' : '#070600');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Favicon SVG Monogram -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070600'/%3E%3Cpath d='M16 16 L48 16 L48 48 L16 48 Z' fill='none' stroke='%2323B5D3' stroke-width='1.5' stroke-dasharray='4 2' opacity='0.4'/%3E%3Ctext x='16' y='42' font-family='sans-serif' font-weight='900' font-size='28' fill='%23EA526F'%3ES%3C/text%3E%3Ctext x='32' y='42' font-family='sans-serif' font-weight='900' font-size='28' fill='%2323B5D3'%3ES%3C/text%3E%3Ccircle cx='50' cy='18' r='3' fill='%23EA526F'/%3E%3C/svg%3E" />
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-theme-main text-theme-main antialiased selection:bg-[#EA526F] selection:text-[#F7F7FF] overflow-x-clip">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
